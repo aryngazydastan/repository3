@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+<%= image_tag("baner4.png", :alt => "baner") %></br>
+
+<%= link_to 'Новый документ', new_document_path %>
+
+
+<h3>Репозиторий Международного Университета Информационных Технологий</h3>
+
+
+<table cellpadding="0">
+  <tbody>
+    <% @documents.each do |document| %>
+      <tr>
+        <td><%= image_tag("folder232.png", :alt => "folder") %></td>
+        <td></td>
+        <td class="name"><h5><%= document.name %></h5></td>
+        <td><h5><%= document.created_at.strftime("%m/%d/%Y") %></h5></td>
+        <td></td>
+        <td><h5><%= link_to "Скачать", document.documentation.url %></h5></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+
