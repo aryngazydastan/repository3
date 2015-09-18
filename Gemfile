@@ -7,6 +7,9 @@ gem 'rails', '4.2.4'
 gem 'pg'
 gem 'rails_12factor'
 gem 'carrierwave'
+gem 'carrierwave_direct'
+gem 'rmagick'
+gem 'sidekiq'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
